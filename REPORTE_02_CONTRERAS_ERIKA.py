@@ -98,4 +98,8 @@ dicdeingresos = [[value, key] for key, value in dicdeingresos.items()]
 dicdeingresos = sorted(dicdeingresos, reverse=True)
 top1 = dicdeingresos[0]
 dicdeingresos = dict(dicdeingresos)
+print(f"""
+Ingresos opción 1: {ingresos_1}
+Ingresos opción 2: {ingresos_2}
+Ingresos opción 3: {ingresos_3}  """)
 print(f"\nLa mejor opción es: {dicdeingresos[top1[0]]}")
