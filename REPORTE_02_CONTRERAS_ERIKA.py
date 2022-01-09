@@ -33,7 +33,7 @@ pais_total_value["cumsum"] = pais_total_value["percent"].cumsum()
 #recortamos la lista a solo los países arriba del porcentaje acumulado de 80%
 lista_pequeña = pais_total_value[pais_total_value["cumsum"] < 80]
 print(f"""\nLos países que representan el 80% de todas las ganancias son: 
-{lista_pequeña["origin"]}""")
+{lista_pequeña}""")
 #%%
 #Para analizar el top 3 de medios de transporte y el menos rentable primero 
 #vamos a calcular el ingreso por cada transporte agrupando por medio de 
